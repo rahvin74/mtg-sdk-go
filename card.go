@@ -119,9 +119,9 @@ type Card struct {
 	// If this card was a timeshifted card in the set.
 	Timeshifted bool `json:"timeshifted"`
 	// Maximum hand size modifier. Only exists for Vanguard cards.
-	Hand int `json:"hand"`
+	Hand string `json:"hand"`
 	// Starting life total modifier. Only exists for Vanguard cards.
-	Life int `json:"life"`
+	Life string `json:"life"`
 	// Set to true if this card is reserved by Wizards Official Reprint Policy
 	Reserved bool `json:"reserved"`
 	// The date this card was released. This is only set for promo cards. The date may not be accurate to an exact day and month, thus only a partial date may be set (YYYY-MM-DD or YYYY-MM or YYYY). Some promo cards do not have a known release date.
